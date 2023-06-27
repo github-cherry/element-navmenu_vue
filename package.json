@@ -1,0 +1,35 @@
+{
+  "name": "element-navmenu_vue",
+  "version": "1.0.0",
+  "description": "基于vue框架elemntUI组件库二次封装的无限下级递归菜单栏",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "files": [
+    "src/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/github-cherry/element-navmenu_vue"
+  },
+  "keywords": [
+    "vue",
+    "elementUI",
+    "NavMenu",
+    "el-menu",
+    "无限下级菜单",
+    "递归菜单",
+    "导航菜单"
+  ],
+  "homepage": "https://github.com/github-cherry/element-navmenu_vue#readme",
+  "author": "quanyi",
+  "license": "MIT",
+  "bugs": "https://github.com/github-cherry/element-navmenu_vue/issues",
+  "unpkg": "src/index.js",
+  "jsdelivr": "src/index.js",
+  "dependencies": {
+    "vue-fragment": "^1.6.0"
+  }
+}
