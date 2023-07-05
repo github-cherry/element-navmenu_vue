@@ -1,8 +1,11 @@
- import Menu from "./components/index.vue";
+import NavMenu from "./components/index.vue";
 
 
 export default {
   install(Vue) {
-    Vue.component("nav-menu", Menu);
+    Vue.component("nav-menu", NavMenu);
   }
 }
+
+
+export { NavMenu };

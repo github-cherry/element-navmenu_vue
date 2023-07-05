@@ -21,6 +21,8 @@ npm install element-navmenu_vue
 
 ```javascript
 import NavMenu from 'element-navmenu_vue'
+或者
+import {NavMenu} from 'element-navmenu_vue'
 ```
 
 
@@ -28,6 +30,8 @@ import NavMenu from 'element-navmenu_vue'
 
 ```javascript
 Vue.use(NavMenu)
+或者
+.vue文件处     components:{NavMenu}
 ```
 
 **使用：**
@@ -38,9 +42,11 @@ Vue.use(NavMenu)
 
 - 参数**data**说明：
 
-​       格式：[{},{},{}...]
+​       格式：`[{},{},{}...]` ， `{}`中必含字段(就是字段可以没值，但要有字段存在)：
 
-​       必传字段： menuName、menuId、icon、url、children。例如：
+​       **menuName**、**menuId**、**children**
+
+  例如：
 
 ```json
 [
@@ -57,10 +63,7 @@ Vue.use(NavMenu)
         "visible":"0",
         "perms":"my/info",
         "icon":"",
-        "menuIdStr":"1488",
-        "children":[
-
-        ]
+        "children":[]
     },
     {
         "createBy":"admin",
@@ -70,18 +73,48 @@ Vue.use(NavMenu)
         "menuName":"测试页面",
         "parentId":0,
         "orderNum":"0",
-        "url":"/test",
-        "menuType":"F",
+        "url":"",
+        "menuType":"M",
         "visible":"0",
         "perms":"test-page",
         "icon":"fa fa-bandcamp",
-        "menuIdStr":"1489",
         "children":[
-
+          {
+            "createBy":"admin",
+            "createTime":"2022-07-18 16:16:52",
+            "remark":"test",
+            "menuId":14890,
+            "menuName":"测试页面1",
+            "parentId":1489,
+            "orderNum":"0",
+            "url":"/test1",
+            "menuType":"F",
+            "visible":"0",
+            "perms":"test-page",
+            "icon":"fa fa-bandcamp",
+            "children":[]
+          },
+          {
+            "createBy":"admin",
+            "createTime":"2022-07-18 16:16:52",
+            "remark":"test",
+            "menuId":14891,
+            "menuName":"测试页面2",
+            "parentId":1489,
+            "orderNum":"0",
+            "url":"/test2",
+            "menuType":"F",
+            "visible":"0",
+            "perms":"test-page",
+            "icon":"fa fa-bandcamp",
+            "children":[]
+          }
         ]
     }
 ]
 ```
+
+
 
 
 
@@ -93,7 +126,7 @@ Vue.use(NavMenu)
 
 
 
-
+[更多问题https://ask.csdn.net/questions/7970423](https://ask.csdn.net/questions/7970423)
 
 
 
